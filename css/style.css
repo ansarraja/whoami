@@ -3,10 +3,11 @@
 }
 /*Color variables*/
 :root {
---background: rgba(20, 77, 50, 0.8);
+--background: rgba(143, 156, 150, 0.8);
 --textclr: rgb(242, 236, 207);
 --silver:rgb(169, 166, 166);
 --hoverclr:rgb(4, 74, 57);
+--darkgray:rgb(32, 31, 31);
 }
 
 body {
@@ -65,3 +66,106 @@ nav a {
   font-size: 2rem;
 }
 
+.hero-banner {
+  padding:2% 5%;
+  background-color: var(--darkgray);
+  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(red, yellow);
+  background-size: cover;
+  background-position: center;
+  min-height:30vh ;
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+  }
+  
+  .hero-banner h2 {
+    padding: 5px 10px;
+    background-color: var(--hoverclr);
+    color: var(--textclr);
+    font-size: 2.5rem;
+    display: inline;
+    
+  }
+
+  .page-wrapper {
+    max-width: 88%;
+
+  }
+  .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--background);
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .page-section > div{
+    flex: 0 0 77%;    
+  }
+  
+  .flex-container {
+    display: flex;
+    flex:wrap;
+    justify-content: center;
+  }
+
+  .flex-item {
+    border:5px var(--hoverclr);
+    background-color: var(--background);
+    color: var(--textclr);
+    min-height: 150px;
+    max-height: 150px;
+    background-size: 150%;
+    padding: 0 0 20px 0;
+    display:flex;
+    align-items: flex-end;
+   flex-basis: calc(50% - 1em);
+    transition: all 0.5s;
+    font-size: 1rem;
+  }
+
+  
+  flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+  }
+
+  .flex-item div {
+    background-color: var(--hoverclr);
+    padding: 8px 10px;
+  }
+
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+
+/* portfolio project images */
+.run-buddy {
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.pastel-puzzles {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.surf-report {  
+  background-image: url("../images/02-portfolio-4.jpg");
+
+}
+.led-wall {
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.react-calc {
+  background-image: url("../images/02-portfolio-2.jpg");
+}
