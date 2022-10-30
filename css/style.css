@@ -5,7 +5,7 @@
 :root {
 --background: rgba(143, 145, 156, 0.8);
 --textclr: rgb(242, 236, 207);
---silver:rgb(169, 166, 166);
+--darkGreen:rgb(5, 51, 20);
 --hoverclr:rgb(90, 171, 151);
 --darkgray:rgb(78, 78, 78);
 }
@@ -162,6 +162,34 @@ nav a {
     color: blue;
   }
 
+  .contact div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact div a:hover {
+    background-size: 100% 88%;
+    color: var(--textclr);
+    background-color:var(--darkgray);
+    font-weight: bold;
+  }
+
+  .contact div a {
+    color: var(--darkGreen);
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
 
   .flex-item h3 {
     font-size: 1.6rem;
